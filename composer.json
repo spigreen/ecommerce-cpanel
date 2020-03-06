@@ -1,0 +1,42 @@
+{
+  "name":         "qualitysolutionweb/cpanel",
+  "description":  "Controle de tarefas de servidores CPanel",
+  "keywords":     ["cron", "jobs", "cpanel", "cron jobs", "job"],
+
+  "type": "library",
+  "license": "proprietary",
+
+  "authors": [
+    {
+      "name": "Jorge Vahldick",
+      "email": "jvahldick@gmail.com"
+    }
+  ],
+
+  "autoload": {
+    "psr-4":  { "QualityPress\\Component\\CPanel\\": "" },
+    "files":  [ "libs/cpanel/xmlapi.php" ]
+  },
+
+  "require": {
+    "php":                  ">=5.3.9"
+  },
+
+  "require-dev": {
+    "symfony/yaml":    "v2.7.*",
+    "symfony/console": "v2.7.*"
+  },
+
+  "suggest": {
+    "symfony/yaml":     "Permite trabalhar com manipulacao de arquivos YAML",
+    "symfony/console":  "Trabalhar com linha de comando para adicionar ou carregar de um arquivo YAML"
+  },
+
+  "minimum-stability": "dev",
+
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}

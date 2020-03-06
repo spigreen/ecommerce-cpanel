@@ -1,0 +1,11 @@
+cpanel:
+    connection:
+        host      : ""
+        user      : ""
+        pass      : ""
+        port      : "2087"
+        protocol  : "https"
+
+    cron:
+        - { command: "", minute: '0', hour: '0', day: '*', month: '*', weekday: '*' }
+        - { command: "", minute: '0', hour: '0', day: '*', month: '*', weekday: '*' }
